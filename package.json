@@ -1,0 +1,28 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-env": "^1.3.3",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.1.1",
+    "install": "^0.8.7",
+    "rimraf": "^2.3.1"
+  },
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "natives": "^1.1.6",
+    "parallax-js": "^3.1.0"
+  }
+}

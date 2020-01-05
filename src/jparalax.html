@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <title>Paralax</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <menu>
+    <ul>
+      <li><a href="./index.html">Parallax.js</a></li>
+      <li><a href="./jparalax.html">JParalax</a></li>
+      <li><a href="./parallax-custom.html">Jquery custom js</a></li>
+    </ul>
+  </menu>
+
+  <div class="page-description">
+    Documentation: <a href="http://stephen.band/jparallax/" target="_blank">JParalax</a>
+  </div>
+
+  <div id="parallax">
+    <div class="bg1 parallax-layer"></div>
+    <div class="bg2 parallax-layer"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="js/jquery.parallax.min.js"></script>
+  <script src="js/jquery.event.frame.js"></script>
+  <script>
+    $(function () {
+      $('#parallax .parallax-layer').parallax({
+        // Ограничить область действия
+        mouseport: $('#parallax')
+      })
+    })
+  </script>
+</body>
+</html>

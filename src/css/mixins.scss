@@ -1,0 +1,32 @@
+// generic mixin for screen width (both min and max)
+@mixin media($from, $to) {
+  @media screen and (min-width: $from + 0px) and (max-width: $to +0px) {
+    @content;
+  }
+}
+
+// generic mixin for screen width (max only)
+@mixin media-min($width) {
+  @media screen and (min-width: $width + 0px) {
+    @content;
+  }
+}
+
+// mixins for required sizes
+@mixin media-l {
+  @include media-min(960) {
+    @content;
+  }
+}
+
+@mixin media-m {
+  @include media-min(768) {
+    @content;
+  }
+}
+
+@mixin media-s {
+  @include media-min(480) {
+    @content;
+  }
+}
