@@ -37,6 +37,9 @@ menu ul a {
   color: #337ab7;
   font-size: 15px; }
 
+hr {
+  border: 1px solid grey; }
+
 #parallax {
   background: url(../img/background.jpg) no-repeat center center;
   width: 100%;
@@ -188,3 +191,26 @@ menu ul a {
 
 .invert-scroll .block-3 {
   left: 2500px; }
+
+.ghost-elem {
+  min-height: 100vh; }
+
+.ghost-elem img {
+  max-width: 100%;
+  height: auto; }
+
+.ghost-elem .pic {
+  max-height: 200px; }
+
+.ghost-elem .gallery .pic {
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: scale3d(1.2, 1.2, 1.2);
+  transform: scale3d(1.2, 1.2, 1.2);
+  display: inline-block; }
+
+.ghost-elem .gallery .showing.pic {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1); }

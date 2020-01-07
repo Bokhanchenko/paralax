@@ -45,6 +45,10 @@ menu ul {
   }
 }
 
+hr {
+  border: 1px solid grey;
+}
+
 #parallax {
   background: url(../img/background.jpg) no-repeat center center;
   width: 100%;
@@ -201,6 +205,33 @@ menu ul {
     }
     &-3 {
       left: 2500px
+    }
+  }
+}
+
+.ghost-elem {
+  min-height: 100vh;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .pic {
+    max-height: 200px;
+  }
+
+  .gallery {
+    .pic {
+      opacity: 0;
+      transition: all .5s;
+      transform: scale3d(1.2, 1.2, 1.2);
+      display: inline-block;
+    }
+
+    & .showing.pic {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
     }
   }
 }
