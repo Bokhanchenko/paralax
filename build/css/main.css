@@ -58,7 +58,7 @@ menu ul a {
   width: 1602px;
   height: 630px; }
 
-.section {
+.parallax-custom .section {
   height: 100vh;
   overflow: hidden;
   display: -webkit-box;
@@ -72,22 +72,22 @@ menu ul a {
   -ms-flex-pack: center;
   justify-content: center; }
 
-.section h2 {
+.parallax-custom .section h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 40px;
   color: #ffffff;
   text-shadow: 0 0 10px black; }
 
-.section-1 {
+.parallax-custom .section-1 {
   background: url(../img/1.jpg) center center;
   background-size: cover; }
 
-.section-2 {
+.parallax-custom .section-2 {
   background: url(../img/2.jpg) center center;
   background-size: cover; }
 
-.section-3 {
+.parallax-custom .section-3 {
   background: url(../img/3.jpg) center center;
   background-size: cover; }
 
@@ -95,10 +95,8 @@ menu ul a {
   background: url(../img/5/bg.png);
   color: #fff;
   font: 15px/22px "Lora", sans-serif;
-  min-height: 100vh; }
-
-.parallax-zoom .content {
-  margin-top: 50px; }
+  min-height: 100vh;
+  padding-top: 50px; }
 
 .parallax-zoom .grid-item {
   background: #fff;
@@ -165,3 +163,28 @@ menu ul a {
   margin: auto;
   -webkit-box-shadow: inset 0 0 50px #ccc;
   box-shadow: inset 0 0 50px #ccc; }
+
+.invert-scroll {
+  min-height: 100vh; }
+
+.invert-scroll .scroll {
+  position: fixed;
+  bottom: 0; }
+
+.invert-scroll .section-3 > div {
+  position: absolute;
+  top: -20vh;
+  background: #3c3c3c;
+  color: #9acfea;
+  padding: 10px;
+  width: 500px;
+  height: 300px; }
+
+.invert-scroll .block-1 {
+  left: 400px; }
+
+.invert-scroll .block-2 {
+  left: 1500px; }
+
+.invert-scroll .block-3 {
+  left: 2500px; }

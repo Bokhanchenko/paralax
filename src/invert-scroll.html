@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Parallax</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <menu>
+    <ul>
+      <li><a href="./index.html">Parallax.js</a></li>
+      <li><a href="./jparalax.html">JParalax</a></li>
+      <li><a href="./parallax-custom.html">Jquery custom js</a></li>
+      <li><a href="./zoom.html">Zoom</a></li>
+      <li><a href="./projector.html">Projector</a></li>
+      <li><a href="./invert-scroll.html">Invert Scroll</a></li>
+    </ul>
+  </menu>
+
+  <div class="invert-scroll">
+    <div class="scroll section-1">
+      <img src="img/7/1.png" alt="">
+    </div>
+    <div class="scroll section-2">
+      <img src="img/7/2.png" alt="">
+    </div>
+    <div class="scroll section-3">
+      <img src="img/7/3.png" alt="">
+      <div class="block block-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquam aut debitis dicta dolorum earum, enim et eum excepturi expedita hic id impedit laborum magnam natus nesciunt odio pariatur quasi recusandae sed sequi tempora tenetur. Accusantium ad, aut culpa deserunt dolorem earum enim et excepturi exercitationem facere fuga laborum magnam molestiae nemo nobis non perferendis perspiciatis quaerat quasi qui quibusdam saepe suscipit totam unde ut vitae voluptate. Alias amet animi asperiores dolorum earum facilis illum itaque mollitia nemo nihil non optio quia quibusdam quod quos, saepe vitae. Architecto assumenda atque corporis delectus eos, ex expedita incidunt neque numquam officiis.</div>
+      <div class="block block-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquam aut debitis dicta dolorum earum, enim et eum excepturi expedita hic id impedit laborum magnam natus nesciunt odio pariatur quasi recusandae sed sequi tempora tenetur. Accusantium ad, aut culpa deserunt dolorem earum enim et excepturi exercitationem facere fuga laborum magnam molestiae nemo nobis non perferendis perspiciatis quaerat quasi qui quibusdam saepe suscipit totam unde ut vitae voluptate. Alias amet animi asperiores dolorum earum facilis illum itaque mollitia nemo nihil non optio quia quibusdam quod quos, saepe vitae. Architecto assumenda atque corporis delectus eos, ex expedita incidunt neque numquam officiis.</div>
+      <div class="block block-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquam aut debitis dicta dolorum earum, enim et eum excepturi expedita hic id impedit laborum magnam natus nesciunt odio pariatur quasi recusandae sed sequi tempora tenetur. Accusantium ad, aut culpa deserunt dolorem earum enim et excepturi exercitationem facere fuga laborum magnam molestiae nemo nobis non perferendis perspiciatis quaerat quasi qui quibusdam saepe suscipit totam unde ut vitae voluptate. Alias amet animi asperiores dolorum earum facilis illum itaque mollitia nemo nihil non optio quia quibusdam quod quos, saepe vitae. Architecto assumenda atque corporis delectus eos, ex expedita incidunt neque numquam officiis.</div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/jquery.jInvertScroll.js"></script>
+  <script>
+    $(function() {
+      $.jInvertScroll(['.scroll']);
+    });
+  </script>
+</body>
+</html>
