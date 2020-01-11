@@ -1,6 +1,6 @@
 //@import "partials/reset";
 //@import "mixins";
-@import "jquery.multiscroll";
+//@import "jquery.multiscroll";
 
 
 // ======================== GENERAL
@@ -19,16 +19,6 @@ html, body {
 
 p {
   text-indent: 20px;
-}
-
-.parallax-window {
-  min-height: 600px;
-  background: transparent;
-}
-
-.page-description {
-  padding: 20px;
-  font-weight: bold;
 }
 
 menu ul {
@@ -51,6 +41,18 @@ hr {
   border: 1px solid grey;
 }
 
+.scroll-back {
+  .parallax-window {
+    min-height: 600px;
+    background: transparent;
+  }
+
+  .page-description {
+    padding: 20px;
+    font-weight: bold;
+  }
+}
+
 #parallax {
   background: url(../img/background.jpg) no-repeat center center;
   width: 100%;
@@ -58,22 +60,22 @@ hr {
   overflow: hidden;
   position: relative;
   background-size: cover;
-}
 
-.parallax-layer {
-  position: absolute;
-}
+  .parallax-layer {
+    position: absolute;
+  }
 
-.bg1 {
-  background: url(../img/drops_bg_back.png) no-repeat;
-  width: 1602px;
-  height: 830px;
-}
+  .bg1 {
+    background: url(../img/drops_bg_back.png) no-repeat;
+    width: 1602px;
+    height: 830px;
+  }
 
-.bg2 {
-  background: url(../img/drops_bg_up.png) no-repeat;
-  width: 1602px;
-  height: 630px;
+  .bg2 {
+    background: url(../img/drops_bg_up.png) no-repeat;
+    width: 1602px;
+    height: 630px;
+  }
 }
 
 .parallax-custom {
@@ -294,4 +296,10 @@ hr {
     background: url(../img/10/moon.jpg) no-repeat right;
     background-size: 100%;
   }
+}
+
+.snow {
+  width: 100%;
+  background: url(../img/99px_ru_wallpaper_210328_seksualnaja_model_viktorija_v_kostume_snegurochki_fotograf_sean.jpg) no-repeat center;
+  background-size: cover;
 }
