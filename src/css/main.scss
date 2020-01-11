@@ -1,5 +1,7 @@
 //@import "partials/reset";
 //@import "mixins";
+@import "jquery.multiscroll";
+
 
 // ======================== GENERAL
 
@@ -233,5 +235,63 @@ hr {
       opacity: 1;
       transform: scale3d(1, 1, 1);
     }
+  }
+}
+
+.multi-scroll {
+  color: white;
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 110;
+  }
+
+  .title {
+    text-transform: uppercase;
+    padding: 50px;
+    font-size: 4rem;
+  }
+
+  #menu {
+    position: fixed;
+    top: 110px;
+    left: 0;
+    z-index: 100;
+    height: 50px;
+    width: 100%;
+
+    li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    a {
+      display: block;
+      background-color: rgba(255,255,255, .3);
+      padding: 10px;
+      border-radius: 10px;
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        background-color: rgba(255,255,255, .8);
+        color: black;
+      }
+    }
+  }
+  .ms-right .section-1 {
+    background: url(../img/10/tiger.jpg) no-repeat right;
+    background-size: 100%;
+  }
+  .ms-right .section-2 {
+    background: url(../img/10/coffee.png) no-repeat 100% 60%;
+    background-size: 100%;
+  }
+  .ms-right .section-3{
+    background: url(../img/10/moon.jpg) no-repeat right;
+    background-size: 100%;
   }
 }

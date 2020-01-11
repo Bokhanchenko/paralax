@@ -22,6 +22,7 @@
   "description": "",
   "dependencies": {
     "jquery": "^3.4.1",
+    "multiscroll.js": "^0.2.2",
     "natives": "^1.1.6",
     "parallax-js": "^3.1.0"
   }

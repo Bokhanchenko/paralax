@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <title>Parallax</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <section class="multi-scroll">
+    <header class="header">
+      <menu>
+        <ul>
+          <li><a href="./index.html">Parallax.js</a></li>
+          <li><a href="./jparalax.html">JParallax</a></li>
+          <li><a href="./parallax-custom.html">Parallax text</a></li>
+          <li><a href="./zoom.html">Zoom</a></li>
+          <li><a href="./projector.html">Projector</a></li>
+          <li><a href="./invert-scroll.html">Invert Scroll</a></li>
+          <li><a href="./ghost-elem.html">Ghost elem</a></li>
+          <li><a href="./multi-scroll.html">Multi scroll</a></li>
+        </ul>
+      </menu>
+
+      <div class="page-description">
+        Documentation: <a href="https://alvarotrigo.com/multiScroll/" target="_blank">MultiScroll.js</a>
+      </div>
+    </header>
+
+    <ul id="menu">
+      <li data-menuanchor="first" class="active"><a href="#first">Tiger woods</a></li>
+      <li data-menuanchor="second"><a href="#second">Coffee Break</a></li>
+      <li data-menuanchor="third"><a href="#third">Evil MOON</a></li>
+    </ul>
+
+    <div class="ms-left">
+      <div class="ms-section title">Tiger woods</div>
+      <div class="ms-section title">Coffee Break</div>
+      <div class="ms-section title">Evil MOON</div>
+    </div>
+
+    <div class="ms-right">
+      <div class="ms-section section-1"></div>
+      <div class="ms-section section-2"></div>
+      <div class="ms-section section-3"></div>
+    </div>
+  </section>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.easings.min.js"></script>
+  <script type="text/javascript" src="js/jquery.multiscroll.js"></script>
+  <script>
+    $(function() {
+      $('.multi-scroll').multiscroll({
+        verticalCentered: true,
+        sectionsColor: ['#000', '#8C0319', '#000'],
+        navigation: true,
+        navigationPosition: 'right',
+        anchors: ['first', 'second', 'third']
+      });
+    })
+  </script>
+</body>
+</html>
