@@ -148,13 +148,35 @@
       //   }
       // })
 
-      if (wScroll + 700 > $('.gallery .row').offset().top) {
-        $('.gallery .pic').each(function(i, el) {
-          setTimeout(function() {
-            $(el).addClass('showing')
-          }, 200 * i)
-        })
-      }
+      // if (wScroll + 700 > $('.gallery .row').offset().top) {
+      //   $('.gallery .pic').each(function(i, el) {
+      //     setTimeout(function() {
+      //       $(el).addClass('showing')
+      //     }, 200 * i)
+      //   })
+      // }
+
+      // ------------------- part 2
+
+      $('.gallery .row').each(function() {
+        if (wScroll + 700 > $(this).offset().top && !$(this).hasClass('is-show')) {
+          $(this).addClass('is-show');
+
+          $(this).find('.pic').each(function(i, el) {
+            setTimeout(function() {
+              $(el).addClass('showing')
+            }, 200 * i)
+          })
+        }
+
+        if (wScroll + 800 < $(this).offset().top && $(this).hasClass('is-show')) {
+          $(this).removeClass('is-show');
+
+          $(this).find('.pic').each(function(i, el) {
+            $(el).removeClass('showing')
+          })
+        }
+      })
     })
   </script>
 </body>
